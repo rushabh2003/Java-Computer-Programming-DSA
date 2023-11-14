@@ -1,0 +1,24 @@
+In Java, hashing is a technique used to map data to a fixed-size value, typically a hash code, for efficient storage and retrieval. Two commonly used classes that utilize hashing are HashSet and HashMap.
+
+Hashing:
+Hashing is a process of converting input data (keys or elements) into a fixed-size value or hash code using a hashing function. This hash code is used as an index to store and retrieve data in collections like HashSet and HashMap. Hashing allows for faster access to elements as it provides a direct way to map keys/elements to their corresponding storage locations.
+
+HashSet in Java:
+HashSet is a collection class in Java that implements the Set interface and uses hashing to store unique elements. It does not allow duplicate elements and permits at most one null element.
+
+When an element is added to a HashSet, Java computes its hash code using the hashCode() method inherited from the Object class. This hash code determines the bucket (storage location) where the element will be stored. If an element already exists in the same bucket (i.e., has the same hash code), the HashSet identifies it as a duplicate and does not add it.
+
+HashMap in Java:
+HashMap is another collection class in Java that implements the Map interface, associating keys with values using hashing. Each unique key maps to a corresponding value in the collection.
+
+When a key-value pair is added to a HashMap, Java calculates the hash code for the key to determine the bucket where the pair will be stored. If multiple keys result in the same hash code (known as a hash code collision), the HashMap resolves this by using a data structure called a linked list or a balanced tree (depending on Java version and number of elements in a bucket) to handle multiple entries in the same bucket.
+
+How Hashing Optimizes Retrieval:
+Hashing allows for efficient retrieval of elements in HashSet and HashMap. When retrieving an element, Java first computes the hash code for the key (or element in HashSet). It uses this hash code to locate the corresponding bucket where the desired element is likely stored. This process significantly reduces the search space and results in faster retrieval compared to linear search in a non-hashed collection.
+
+In summary, hashing in Java (used by HashSet and HashMap) involves the conversion of keys or elements into hash codes using hashing functions. These hash codes determine the storage location of elements, allowing for efficient storage and retrieval, resulting in improved performance for large collections of data.
+
+
+
+
+
