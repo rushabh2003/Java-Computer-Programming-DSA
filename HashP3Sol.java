@@ -1,10 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
 
 // } Driver Code Ends
 //User function Template for Java

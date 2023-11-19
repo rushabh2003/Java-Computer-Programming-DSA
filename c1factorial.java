@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 //Driver Code Starts
 class factorial
